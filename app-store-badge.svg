@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <rect width="120" height="40" rx="6" fill="#000"/>
+  <rect x="0.5" y="0.5" width="119" height="39" rx="5.5" stroke="#A6A6A6" stroke-width="1" fill="none"/>
+  <!-- Apple logo -->
+  <g transform="translate(8.5, 7.5)" fill="#fff">
+    <path d="M18.9 9.883c-.047-3.641 2.975-5.398 3.113-5.484-1.697-2.484-4.334-2.824-5.272-2.859-2.229-.234-4.389 1.336-5.526 1.336-1.16 0-2.916-1.313-4.805-1.274-2.445.038-4.727 1.446-5.985 3.647-2.578 4.477-.658 11.075 1.822 14.705 1.234 1.781 2.687 3.773 4.6 3.703 1.862-.078 2.559-1.195 4.809-1.195 2.225 0 2.875 1.195 4.822 1.152 1.998-.031 3.252-1.797 4.462-3.59 1.434-2.047 2.013-4.063 2.037-4.168-.045-.016-3.885-1.488-3.924-5.926l-.153-.047zM15.406 3.488C16.443 2.238 17.15.564 16.963-.001c-1.424.06-3.178.977-4.203 2.176-.906 1.07-1.72 2.814-1.508 4.461 1.595.121 3.234-.805 4.154-2.148z" transform="scale(0.55)"/>
+  </g>
+  <!-- Text -->
+  <text x="37" y="13" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="5.6" letter-spacing="0.02em">Download on the</text>
+  <text x="37" y="27.5" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.01em">App Store</text>
+</svg>
