@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "8Z3QVY9QBC.com.stocktok.app"
+        ],
+        "paths": [
+          "/video/*",
+          "/creator/*",
+          "/community/*",
+          "/dm/*",
+          "/story/*",
+          "/courses/*"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.stocktok.app",
+      "sha256_cert_fingerprints": [
+        "SHA256_PENDING_ANDROID_KEYSTORE_NOT_YET_CREATED"
+      ]
+    }
+  }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Watch on StockTok</title>
+  <meta property="og:title" content="Watch on StockTok" />
+  <meta property="og:description" content="Open this video in StockTok — the financial social network." />
+  <meta property="og:type" content="video" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { text-align: center; padding: 2rem; max-width: 420px; }
+    .icon {
+      width: 80px; height: 80px; background: rgba(0,192,135,0.15); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem; font-size: 2rem;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .subtitle { color: #888; margin-bottom: 2rem; line-height: 1.5; }
+    .open-btn {
+      display: inline-block; background: #00C087; color: #fff; text-decoration: none;
+      font-weight: 600; padding: 0.875rem 2.5rem; border-radius: 12px; font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .open-btn:hover { opacity: 0.85; }
+    .fallback { color: #555; font-size: 0.875rem; }
+    .fallback a { color: #00C087; }
+  </style>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var videoId = path.split('/').pop();
+      var scheme = 'stocktok://' + path;
+      var ua = navigator.userAgent || '';
+      if (/iPhone|iPad|iPod|Android/i.test(ua)) {
+        window.location.href = scheme;
+        // If the app doesn't open within 1.5s, stay on this page
+        setTimeout(function() {}, 1500);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">&#9654;</div>
+    <h1>Watch on StockTok</h1>
+    <p class="subtitle">This video is best experienced in the StockTok app.</p>
+    <a class="open-btn" href="stocktok://video/" id="openApp">Open in App</a>
+    <p class="fallback">Don't have StockTok? <a href="https://apps.apple.com/app/stocktok/APP_STORE_ID_PENDING">Download now</a></p>
+  </div>
+  <script>
+    // Set the correct deep link based on current path
+    var path = window.location.pathname;
+    document.getElementById('openApp').href = 'stocktok://' + path;
+  </script>
+</body>
+</html>
