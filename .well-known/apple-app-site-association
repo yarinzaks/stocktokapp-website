@@ -12,7 +12,9 @@
           "/community/*",
           "/dm/*",
           "/story/*",
-          "/courses/*"
+          "/courses/*",
+          "/reset-password",
+          "/reset-password/*"
         ]
       }
     ]
